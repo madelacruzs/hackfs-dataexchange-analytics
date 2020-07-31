@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink as RouterLink } from "react-router-dom";
 import clsx from "clsx";
 import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/styles";
@@ -46,9 +47,11 @@ const UpgradePlan = (props) => {
                 </Typography>
             </div>
             <div className={classes.actions}>
-                <Button color="primary" component="a" href="/datasets" variant="contained">
-                    Upload
-                </Button>
+                <RouterLink to="/UploadDataSet">
+                    <Button color="primary" variant="contained">
+                        Upload
+                    </Button>
+                </RouterLink>
             </div>
         </div>
     );

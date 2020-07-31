@@ -11,6 +11,7 @@ import {
     Analytics as AnalyticsView,
     NotFound as NotFoundView,
     NoMetamask as NoMetamaskView,
+    UploadDataSet as UploadDataSetView,
 } from "./views";
 
 const Routes = () => {
@@ -63,6 +64,7 @@ const Routes = () => {
             <RouteWithLayout component={DataSetListView} exact layout={MainLayout} path="/datasets" />
             <RouteWithLayout component={AccountView} exact layout={MainLayout} path="/account" />
             <RouteWithLayout component={AnalyticsView} exact layout={MainLayout} path="/analytics" />
+            <RouteWithLayout component={UploadDataSetView} exact layout={MainLayout} path="/UploadDataSet" />
 
             <RouteWithLayout component={NotFoundView} exact layout={MinimalLayout} path="/not-found" />
             <Redirect to="/not-found" />
