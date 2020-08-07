@@ -22,7 +22,7 @@ const Footer = (props) => {
                 <Link component="a" href="https://DatexAnalytics.io/" target="_blank">
                     Datex Analytics
                 </Link>
-                . 2019
+                . 2020
             </Typography>
             <Typography variant="caption">Decentralized Data Exchange & Analytics</Typography>
         </div>
