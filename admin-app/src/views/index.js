@@ -6,3 +6,4 @@ export { default as NoMetamask } from "./NoMetamask";
 export { default as DataSetList } from "./DataSetList";
 export { default as Analytics } from "./Analytics";
 export { default as UploadDataSet } from "./UploadDataSet";
+export { default as Pipeline } from "./Pipeline";

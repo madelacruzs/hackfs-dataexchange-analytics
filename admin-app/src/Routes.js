@@ -12,6 +12,7 @@ import {
     NotFound as NotFoundView,
     NoMetamask as NoMetamaskView,
     UploadDataSet as UploadDataSetView,
+    Pipeline as PipelineView,
 } from "./views";
 
 const Routes = () => {
@@ -62,6 +63,8 @@ const Routes = () => {
             <Redirect exact from="/" to="/dashboard" />
             <RouteWithLayout component={DashboardView} exact layout={MainLayout} path="/dashboard" />
             <RouteWithLayout component={DataSetListView} exact layout={MainLayout} path="/datasets" />
+            <RouteWithLayout component={PipelineView} exact layout={MainLayout} path="/datasets/pipeline" />
+
             <RouteWithLayout component={AccountView} exact layout={MainLayout} path="/account" />
             <RouteWithLayout component={AnalyticsView} exact layout={MainLayout} path="/analytics" />
             <RouteWithLayout component={UploadDataSetView} exact layout={MainLayout} path="/UploadDataSet" />

@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/styles";
 import { Button } from "@material-ui/core";
-
+import { NavLink as RouterLink } from "react-router-dom";
 import { SearchInput } from "components";
 
 const useStyles = makeStyles((theme) => ({
@@ -39,9 +39,11 @@ const ProductsToolbar = (props) => {
                 <span className={classes.spacer} />
                 {/* <Button className={classes.importButton}>Import</Button>
                 <Button className={classes.exportButton}>Export</Button> */}
-                <Button color="primary" variant="contained">
-                    Upload DataSet
-                </Button>
+                <RouterLink to="/UploadDataSet">
+                    <Button color="primary" variant="contained">
+                        Upload DataSet
+                    </Button>
+                </RouterLink>
             </div>
             <div className={classes.row}>
                 <SearchInput className={classes.searchInput} placeholder="Search DataSet" />

@@ -5,6 +5,7 @@ import { makeStyles } from "@material-ui/styles";
 import { Card, CardContent, CardActions, Typography, Grid, Divider } from "@material-ui/core";
 import AccessTimeIcon from "@material-ui/icons/AccessTime";
 import GetAppIcon from "@material-ui/icons/GetApp";
+import { NavLink as RouterLink } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
     root: {},
@@ -39,17 +40,19 @@ const ProductCard = (props) => {
 
     return (
         <Card {...rest} className={clsx(classes.root, className)}>
-            <CardContent>
-                <div className={classes.imageContainer}>
-                    <img alt="Product" className={classes.image} src={product.imageUrl} />
-                </div>
-                <Typography align="center" gutterBottom variant="h4">
-                    {product.title}
-                </Typography>
-                <Typography align="center" variant="body1">
-                    {product.description}
-                </Typography>
-            </CardContent>
+            <RouterLink to="/datasets/pipeline">
+                <CardContent>
+                    <div className={classes.imageContainer}>
+                        <img alt="Product" className={classes.image} src={product.imageUrl} />
+                    </div>
+                    <Typography align="center" gutterBottom variant="h4">
+                        {product.title}
+                    </Typography>
+                    <Typography align="center" variant="body1">
+                        {product.description}
+                    </Typography>
+                </CardContent>
+            </RouterLink>
             <Divider />
             <CardActions>
                 <Grid container justify="space-between">

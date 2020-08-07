@@ -59,7 +59,7 @@ const addToIPFS = async (fileToUpload) => {
             if (err) {
                 console.log(err);
             }
-            //console.log(result);
+            console.log(result);
             return result;
         });
     };
