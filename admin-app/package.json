@@ -31,7 +31,7 @@
     "@material-ui/icons": "^4.2.1",
     "@material-ui/styles": "^4.2.1",
     "@metamask/onboarding": "^1.0.0",
-    "chart.js": "^2.8.0",
+    "chart.js": "^2.9.4",
     "clsx": "^1.0.4",
     "ethereum-react-components": "^1.14.0",
     "ethers": "^5.0.7",
